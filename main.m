@@ -37,7 +37,7 @@ osim_path = fullfile(pathRepo,'Subjects',S.subject.name,[S.subject.name '.osim']
 
 % path to folder with program to create dll files from opensim model (will
 % be downloaded automatically if it is not there)
-S.Cpp2Dll.PathCpp2Dll_Exe = 'C:\GBW_MyPrograms\Osim2Dll_exe';
+S.Cpp2Dll.PathCpp2Dll_Exe = 'C:\Users\Buurke\Git\NBG\PredSim\Osim2Dll_exe';
 
 % Do you want to run the simulation as a batch job (parallel computing toolbox)
 S.solver.run_as_batch_job = 0;
@@ -78,7 +78,7 @@ S.post_process.make_plot = 1;
 % S.post_process.savename  = 'datetime';
 % S.post_process.load_prev_opti_vars = 1;
 % S.post_process.rerun   = 1;
-% S.post_process.result_filename = '';
+S.post_process.result_filename = 'Falisse_et_al_2022_v9';
 
 % % S.solver
 % S.solver.linear_solver  = '';
@@ -88,7 +88,7 @@ S.post_process.make_plot = 1;
 % S.solver.N_threads      = 6;
 % S.solver.N_meshes       = 100;
 % S.solver.par_cluster_name = ;
-S.solver.CasADi_path    = 'C:\GBW_MyPrograms\casadi_3_5_5';
+S.solver.CasADi_path    = 'C:\Users\Buurke\OneDrive - KU Leuven\Documents\Projecten\SimStroke\MATLAB\casadi-windows-matlabR2016a-v3.5.5';
 
 
 % % S.subject
@@ -120,7 +120,7 @@ S.subject.set_damping_coefficient_selected_dofs = {{'mtp_angle_l','mtp_angle_r'}
 % S.weights.pass_torq_includes_damping = ;
 
 % %S.Cpp2Dll: required inputs to convert .osim to .dll
-% S.Cpp2Dll.compiler = 'Visual Studio 17 2022';
+S.Cpp2Dll.compiler = 'Visual Studio 17 2022';
 % S.Cpp2Dll.export3DSegmentOrigins = ;
 S.Cpp2Dll.verbose_mode = 0; % 0 for no outputs from cmake
 % S.Cpp2Dll.jointsOrder = ;
